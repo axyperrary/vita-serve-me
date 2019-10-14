@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "hi"
+    return "<h1>hi<h1>"
 
 @app.route('/api', methods=['POST'])
 def index():
