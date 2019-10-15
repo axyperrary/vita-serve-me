@@ -8,7 +8,7 @@ def index():
     return "<h1>hello<h1>"
 
 @app.route('/api', methods=['POST'])
-def index():
+def main():
     print (request.form['param'])
     response = make_response(json.dumps('Done!'))
     response.headers['Access-Control-Allow-Origin'] = '*'
